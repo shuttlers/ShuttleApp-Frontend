@@ -6,6 +6,7 @@ var name = document.getElementById("name").value;
 var date = document.getElementById("date").value;
 var time = document.getElementById("time").value;
 var destination = $("#destination").val();
+
 if($("input[type='radio'].ourservices").is(':checked')) {
     var service_type = $("input[type='radio'].ourservices:checked").val();
     }
@@ -22,16 +23,26 @@ function validation() {
 var name = document.getElementById("name").value;
 var date = document.getElementById("date").value;
 var time = document.getElementById("time").value;
+var alpha = /[*|\":<>[\]{}`\\()';@&$]/;
+var regex = /[0-9]|\./;
 var destination = $("#destination").val();
 if (name === '' || date === '' || time == '') {
 alert("Please complete all fields under the services tab...!!!!!!");
 return false;
 }
-else if(check_service())
-{
-  return true
+else if(alpha.test(name)){
+alert("Please insert a valid name....") ;
+return false;   
 }
- else {
+else if(regex.test(name) ){
+ alert("Please insert a valid name....") ;
+return false;
+}
+else if(!check_service())
+{
+  return false
+}
+else {
 return true;
 }
 }
@@ -73,6 +84,8 @@ var destination1 = $("#destination").val();
 var email = document.getElementById("email").value;
 var comments = $("#comments").val();
 var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+var alpha = /[*|\":<>[\]{}`\\()';@&$]/;
+var regex = /[0-9]|\./;
 
 if (name1 === '' || date1 == '' || time1 == ''|| comments == '') {
 alert("Please complete all fields in the feedbak form...!!!!!!");
@@ -82,10 +95,20 @@ else if(!(email).match(emailReg)) {
 alert("Invalid Email...!!!!!!");
 return false;
 }
+else if(alpha.test(name1)){
+alert("Please insert a valid name....") ;
+return false;   
+}
+else if(regex.test(name1) ){
+ alert("Please insert a valid name....") ;
+return false;
+}
  else {
 return true;
 }
 }
+
+
 
 
 
