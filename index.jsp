@@ -109,10 +109,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                 	<li><a href=index.jsp>Home</a></li>
-                    <li><a href=aboutus.html>About Us</a></li>
+                    <li><a href=aboutus.jsp>About Us</a></li>
 					<li><a href="#OurServices">Booking</a></li>
-					<li><a href="#OurServices">Booking Status</a></li>
-					<li><a href="#OurServices">Cancellation</a></li>
+					<li><a href=Bookingstatus.jsp>Booking Status</a></li>
+					<li><a href=Cancellation.jsp>Cancellation</a></li>
 					<li><a href=feedback.jsp>Feedback</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -136,8 +136,8 @@
 		    		<form action="BookingDetails.jsp" method="POST" id="service">
 		    			
 		    			<div class="form-group text-center">
-			    			<input type="radio" name="booking" class="ourservices" value="Booking">Booking</input>
-			    			<input type="radio" name="booking" class="ourservices" value="Booking Status">Booking Status</input>
+			    			<input type="radio" name="booking" class="ourservices" value="Booking" checked="checked">Booking</input>
+			    			<input type="radio" name="booking" class="ourservices" value="Booking Status" >Booking Status</input>
 			    			<input type="radio" name="booking" class="ourservices" value="Cancellation" >Cancellation</input>
 		    			</div>
 
