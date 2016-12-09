@@ -1,4 +1,4 @@
-<!doctype html>
+<%@page contentType="text/html" language="java" pageEncoding="UTF-8" %>
 <html lang="en">
 	<head>
 		<title>Ashoka Shuttle Service</title>
@@ -21,7 +21,7 @@
 			margin: 0;
 			padding: 0;
 			font-family: lato;
-            background: url(http://i.imgur.com/TWDjKyL.png) no-repeat center top;
+            background: url(http://i.imgur.com/TWDjKyL.png) no-rsepeat center top;
 		}
 		
 		#Lbanner img{
@@ -62,11 +62,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                	<li><a href=aboutus.html>Home</a></li>
+                	<li><a href=index.jsp>Home</a></li>
                     <li><a href=aboutus.html>About Us</a></li>
-					<li><a href=index.html>Booking</a></li>
-					<li><a href=index.html>Booking Status</a></li>
-					<li><a href=index.html>Cancellation</a></li>
+					<li><a href=index.jsp>Booking</a></li>
+					<li><a href=index.jsp>Booking Status</a></li>
+					<li><a href=index.jsp>Cancellation</a></li>
 					<li><a href="#feedback-form">Feedback</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -79,23 +79,11 @@
 	    		<div class="col-md-6 col-md-offset-3">
 	    			<center><h3>Feedback</h3></center>
 
-	    			<form action="#" id="feedback" method="POST">
+	    			<form action="EmailFeedback.jsp" id="feedback" method="POST">
 	    				<div class="form-group">
 		    				<label>Name : </label>
-		    				<input type="text" name="name1" class="form-control" placeholder="Name" id ="name1" />
-		    			</div>
-		    			<div class="form-group">
-		    				<label>Destination : </label>
-		    				<select name="destination1" class="form-control" id= "destination1">
-		    					<option value="Campus">Campus</option>
-		    					<option value="Jahangirpuri">Jahangirpuri</option>
-		    				</select>
-		    			</div>
-		    			<div class="form-group">
-		    				<label>Date : </label>
-		    				<input type="date" name="date1" class="form-control" placeholder="Pick a date" id = "date1" />
-		    			</div>
-		    			
+		    				<input type="text" name="mailername" class="form-control" placeholder="Name" id ="name1" />
+		    			</div>		    			
 		    			<div class="form-group">
 		    				<label>Email : </label>
 		    				<input type="email" name="email" class="form-control" placeholder="example@exmail.com" id= "email"/>

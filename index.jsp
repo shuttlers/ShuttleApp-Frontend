@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" language="java" pageEncoding="UTF-8" %>
 <html lang="en">
 	<head>
@@ -10,7 +9,8 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="http://i.imgur.com/RdtMmPg.png"/>
-        
+        <script src="http://smtpjs.com/smtp.js"></script>
+        <script id='pp-cfp' data-env='beta' data-token='ab1fe69b24e31bd5c7adeefec9ec3250338db4364e7c0f4a1ef321c2ad140cdf'>(function(d){var s=d.createElement('script'),c=d.createElement('link');s.src='https://beta.prodpad.com/static/js/prodpad-cfp.js';s.async=1;c.href='https://beta.prodpad.com/static/css/prodpad-cfp.css';c.rel='stylesheet';document.head.appendChild(c);document.head.appendChild(s);})(document);</script>
         <script type="text/javascript" src="scripts.js"></script>
         
 	</head>
@@ -21,6 +21,7 @@
 			margin: 0;
 			padding: 0;
 			font-family: lato;
+            background: url(http://i.imgur.com/TWDjKyL.png) no-repeat center top;
 		}
 		
 		#Lbanner img{
@@ -52,23 +53,8 @@
 			color: white;
 		}
 
-		#about{
-			height: 100%;
-			padding: 2em 0;
-			box-sizing: border-box;
-			background-color: #f7f7f7;
-		}
-
-		#about .container .jumbotron{
-			background-color: transparent;
-		}
-
-		#about .container p{
-			text-align: justify;
-			font-size: 1.1em;
-		}
-
-		#OurServices input[type="radio"]{
+		
+        #OurServices input[type="radio"]{
 			margin:0 0.5em;
 		}
 
@@ -122,91 +108,21 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                	<li><a href="#banner">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
+                	<li><a href=index.jsp>Home</a></li>
+                    <li><a href=aboutus.html>About Us</a></li>
 					<li><a href="#OurServices">Booking</a></li>
 					<li><a href="#OurServices">Booking Status</a></li>
 					<li><a href="#OurServices">Cancellation</a></li>
-					<li><a href="#feedback-form">Feedback</a></li>
+					<li><a href=feedback.jsp>Feedback</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
 
-    <div id="banner">
-    	<div id="Lbanner" class="visible-lg">
-    		
-
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img src="http://i.imgur.com/iGTJMzR.png" alt="First slide">
-						<div class="carousel-caption">
-							<h1>Ashoka Shuttle Service</h1>
-						</div>
-					</div>
-					<div class="item">
-						<img src="http://i.imgur.com/vo4YH7S.jpg" alt="Second slide">
-						<div class="carousel-caption">
-							<h1>Ashoka Shuttle Service</h1>
-						</div>
-					</div>
-					<div class="item">
-						<img src="http://i.imgur.com/1B1Gf5R.jpg" alt="Third slide">
-						<div class="carousel-caption">
-							<h1>Ashoka Shuttle Service</h1>
-						</div>
-					</div>
-				</div>  
-			</div>
-	    </div>
-
-	    <div id="Mbanner" class="visible-md visible-sm visible-xs">
-		    <div class="container-fluid">
-		    	<div class="jumbotron text-center">
-		    		<h1>Ashoka Shuttle Service</h1>
-		    	</div>
-		    </div>
-	    </div>
-    </div>
-
-    <div id="about">
-	    <div class="container">
-		    <div class="jumbotron text-center">
-		    	<h2>About Us</h2>
-		    </div>
-		    <div class="row">
-		    	<div class="col-md-10 col-md-offset-1">
-		    		<p>
-			    		<strong>Who we are:</strong> We are a group of three students(Simran Bhuria, 
-			    		Nishka Dasgupta, Mayukh Nair) pursuing undergraduate studies in Computer Science at Ashoka University.
-			    		This online platform is a part of our semester-end CS Project. We hope you have a wonderful experience 
-			    		using our platform! 
-		    		</p>
-					<p>
-						<strong>What this is about:</strong> This online platform is an endeavour to make to and
-						fro travel from campus a hassle-free experience. You no longer need to wait until the last minute 
-						to know if you would be able to find a seat during peak hours. We allow you to book your seats in 
-						advance as well as modify your bookings. We also have waitlists to ensure that you do not miss out 
-						on a shuttle if there is any available seat on that shuttle. You can check the status of your 
-						booking through the booking status tab in the navigation bar. <br></br>
-						We hope this platform uncomplicates to and fro travel from campus. Please do take the time to fill the feedback form and help us improve our service. We value your feedback!
-						In case of any issues with the website, please write to simran.bhuria_ug18@ashoka.edu.in. 
-					</p>
-		    	</div>
-		    </div>
-	    </div>
-    </div>
-
     <div id="OurServices">
 	    <div class="container-fluid">
 	    	<div class="jumbotron text-center">
-	    		<h2>Our Servcies</h2>
+	    		<h2>Our Services</h2>
 	    	</div>
 
 	    	<div class="row">
@@ -217,7 +133,7 @@
 		    			<p><a href="https://www.ashoka.edu.in/shuttle-service/">Please click here for the shuttle schedule</a></p>
 		    		</center>
 
-		    		<form action="BookingDetails.jsp" method="post" id="service">
+		    		<form action="BookingDetails.jsp" method="POST" id="service">
 		    			
 		    			<div class="form-group text-center">
 			    			<input type="radio" name="booking" class="ourservices" value="Booking">Booking</input>
@@ -227,7 +143,7 @@
 
 		    			<div class="form-group">
 		    				<label>Name : </label>
-		    				<input type="text" name="name" id = "name" class="form-control" placeholder="Name" />
+		    				<input type="text" name="name" id = "name"  class="form-control" placeholder="Name" />
 		    			</div>
 		    			<div class="form-group">
 		    				<label>Destination : </label>
@@ -238,11 +154,11 @@
 		    			</div>
 		    			<div class="form-group">
 		    				<label>Date : </label>
-		    				<input type="date" name="name" class="form-control" id = "date" placeholder="Pick a date" />
+		    				<input type="date" name="date" class="form-control" id = "date" placeholder="Pick a date" />
 		    			</div>
 		    			<div class="form-group">
 		    				<label>Time : </label>
-		    				<input type="time" name="name" class="form-control" id="time" />
+		    				<input type="time" name="time" class="form-control" id="time" />
 		    			</div>
 		    			<div class="form-group text-center">
 		    				<input type="submit" name="submit" class="btn btn-primary" value="Submit" onclick="submit_service()" />
@@ -253,48 +169,6 @@
 		    	</div>
 	    	</div>	
 
-	    	<div class="row" id="feedback-form">
-	    		<div class="col-md-6 col-md-offset-3">
-	    			<center><h3>Feedback</h3></center>
-
-	    			<form action="#" id="feedback" method="POST">
-	    				<div class="form-group">
-		    				<label>Name : </label>
-		    				<input type="text" name="name1" class="form-control" placeholder="Name" id ="name1" />
-		    			</div>
-		    			<div class="form-group">
-		    				<label>Destination : </label>
-		    				<select name="destination1" class="form-control" id= "destination1">
-		    					<option value="Campus">Campus</option>
-		    					<option value="Jahangirpuri">Jahangirpuri</option>
-		    				</select>
-		    			</div>
-		    			<div class="form-group">
-		    				<label>Date : </label>
-		    				<input type="date" name="date1" class="form-control" placeholder="Pick a date" id = "date1" />
-		    			</div>
-		    			<div class="form-group">
-		    				<label>Time : </label>
-		    				<input type="time" name="time1" class="form-control" id = "time1"/>
-		    			</div>
-		    			<div class="form-group">
-		    				<label>Email : </label>
-		    				<input type="email" name="email" class="form-control" placeholder="example@exmail.com" id= "email"/>
-		    			</div>
-		    			<div class="form-group">
-		    				<label>Comments : </label>
-		    				<textarea placeholder="Enter your comments here" name="comments" rows="10" class="form-control" id = "comments" ></textarea> 
-		    			</div>
-		    			<div class="form-group text-center">
-		    				<input type="submit" name="submit" class="btn btn-primary" value="Submit" onclick="submit_feedback()" />
-		    			</div>
-	    			</form>
-
-	    		</div>
-	    	</div>
-
-	    </div>
-    </div>	
 
 
 	</body>
