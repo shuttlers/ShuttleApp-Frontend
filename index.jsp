@@ -12,14 +12,9 @@
         <script src="http://smtpjs.com/smtp.js"></script>
         <script id='pp-cfp' data-env='beta' data-token='ab1fe69b24e31bd5c7adeefec9ec3250338db4364e7c0f4a1ef321c2ad140cdf'>(function(d){var s=d.createElement('script'),c=d.createElement('link');s.src='https://beta.prodpad.com/static/js/prodpad-cfp.js';s.async=1;c.href='https://beta.prodpad.com/static/css/prodpad-cfp.css';c.rel='stylesheet';document.head.appendChild(c);document.head.appendChild(s);})(document);</script>
         <script type="text/javascript" src="scripts.js"></script>
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-         <!-- Load jQuery JS -->
-   
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <!-- Load jQuery UI Main JS  -->
-  
-        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    
+        <script src="jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery.datetimepicker.css"/>
+         <script src="jquery.datetimepicker.full.js"></script>
  
    
         
@@ -100,18 +95,16 @@
         });
     </script>
     <script>
-       $(document).ready(
-  
-  /* This is the function that will get executed after the DOM is fully loaded */
-  function () {
-    $( "#datepicker" ).datepicker({
-      changeMonth: true,//this option for allowing user to select month
-      changeYear: true //this option for allowing user to select from year range
-    });
-  }
+    $(function(){
 
-);
-	</script>
+    $('#datetimepicker').datetimepicker({
+    format:'d-m-Y H:i',
+    closeOnWithoutClick :false
+    step: 10
+   
+     });
+    });
+    </script>
 	<body>
 		
 	<nav class="navbar navbar-default" role="navigation" style="position:fixed;width:100%;z-index:5;background-color:white">
@@ -174,13 +167,10 @@
 		    				</select>
 		    			</div>
 		    			<div class="form-group">
-		    				<label>Date : </label>
-		    				<input type="text"  name="date" class="form-control" id = "datepicker" placeholder="Pick a date" />
+		    				<label>Date and Time : </label>
+		    				<input type="text"  name="date" class="form-control" id="datetimepicker" placeholder="Pick a date" />
 		    			</div>
-		    			<div class="form-group">
-		    				<label>Time : </label>
-		    				<input type="time" name="time" class="form-control" id="time" />
-		    			</div>
+		    			
 		    			<div class="form-group text-center">
 		    				<input type="submit" name="submit" class="btn btn-primary" value="Submit" onclick="submit_service()" />
 		    			</div>
