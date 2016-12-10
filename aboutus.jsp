@@ -13,7 +13,7 @@
         <script type="text/javascript" src="scripts.js"></script>
         
         </head>
-inde
+
 	<style type="text/css">
 
 		body{

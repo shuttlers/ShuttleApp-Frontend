@@ -9,8 +9,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="http://i.imgur.com/RdtMmPg.png"/>
-        <script src="http://smtpjs.com/smtp.js"></script>
-        <script id='pp-cfp' data-env='beta' data-token='ab1fe69b24e31bd5c7adeefec9ec3250338db4364e7c0f4a1ef321c2ad140cdf'>(function(d){var s=d.createElement('script'),c=d.createElement('link');s.src='https://beta.prodpad.com/static/js/prodpad-cfp.js';s.async=1;c.href='https://beta.prodpad.com/static/css/prodpad-cfp.css';c.rel='stylesheet';document.head.appendChild(c);document.head.appendChild(s);})(document);</script>
+        
         <script type="text/javascript" src="scripts.js"></script>
         <script src="jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="jquery.datetimepicker.css"/>
@@ -99,9 +98,55 @@
 
     $('#datetimepicker').datetimepicker({
     format:'d-m-Y H:i',
-    closeOnWithoutClick :false
-    step: 10
-   
+    closeOnWithoutClick :false,
+    defaultTime:'10:00',
+    allowTimes:[
+  '06:30',
+'07:00',
+'07:20',
+'07:30',
+'07:40',
+'08:00',
+'08:20',
+'08:40',
+'09:00',
+'09:20',
+'09:40',
+'09:30',
+'10:00',
+'10:20',
+'10:30',
+'10:40',
+'11:00',
+'11:20',
+'11:40',
+'12:00',
+'13:00',
+'14:00',
+'14:30',
+'15:00',
+'15:30',
+'16:00',
+'16:30',
+'17:00',
+'17:20',
+'17:30',
+'17:40',
+'18:00',
+'18:20',
+'18:30',
+'18:40',
+'19:00',
+'19:30',
+'20:00',
+'20:30',
+'21:00',
+'21:30',
+'22:00',
+ '22:45',
+'23:00'
+    ]
+    
      });
     });
     </script>
