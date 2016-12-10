@@ -1,4 +1,5 @@
-<!doctype html>
+<%@ page import="java.io.PrintWriter" %>
+<%@page contentType="text/html" language="java" pageEncoding="UTF-8" %>
 <html lang="en">
 	<head>
 		<title>Ashoka Shuttle Service</title>
@@ -73,6 +74,11 @@
                 <a class="navbar-brand"><img src = "http://i.imgur.com/gnSKAbk.png" style = "height:30px;" /></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
+            <%
+            	String content = (String)request.getAttribute("processResult");
+            	PrintWriter writer = response.getWriter();
+		        writer.println(content);
+            %>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                 	<li><a href=index.jsp>Home</a></li>
