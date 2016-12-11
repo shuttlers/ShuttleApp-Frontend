@@ -8,7 +8,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" language="java" %>
 <html>
 <head>
-    <title>Booking is being processed | Ashoka Shutlle Booking System</title>
+    <title>Booking is being processed | Ashoka Shuttle Booking System</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
@@ -88,7 +88,7 @@
             System.out.println(BookingResult);
             switch(BookingResult){
                             case 1: System.out.println("Booking successful!");
-                            String confirmText = "<h2 align='center'> Booking successful!</h2> <br>"+"<p align='center'>Name: "+name+"<br>"+" Destination: "+destination+"<br>"+"Date and time: "+date+"<br></p>";
+                            String confirmText = "<div style='display: block; width: 100%; height: 15em;'></div>"+ "<h2 align='center'> Booking successful!</h2> <br>"+"<p align='center'>Name: "+name+"<br>"+" Destination: "+destination+"<br>"+"Date and time: "+date+"<br></p>";
                             request.setAttribute("processResult",confirmText);
                             requestDispatcher.forward(request,response);
                             System.out.println("Request sent");
