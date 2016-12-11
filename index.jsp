@@ -9,16 +9,18 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="http://i.imgur.com/RdtMmPg.png"/>
-        
+        <!-- Script for page alerts -->
         <script type="text/javascript" src="scripts.js"></script>
         <script src="jquery.min.js"></script>
+        <!-- Stylesheet for the date-time picker -->
         <link rel="stylesheet" type="text/css" href="jquery.datetimepicker.css"/>
+        <!-- Script to control the date-time picker  -->
          <script src="jquery.datetimepicker.full.js"></script>
  
    
         
 	</head>
-
+    <!-- Stylesheet for the objects used on the page -->
 	<style type="text/css">
 
 		body{
@@ -74,7 +76,7 @@
 		}
 
 	</style>
-
+    <!-- Script to control carousel slider -->
 	<script type="text/javascript">
 		
 		$(document).ready(function () {
@@ -93,6 +95,7 @@
             });
         });
     </script>
+    <!-- Script to customize the actions of date-time picker -->
     <script>
     $(function(){
 
@@ -177,7 +180,7 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-
+    
     <div id="OurServices">
 	    <div class="container-fluid">
 	    	
@@ -192,7 +195,7 @@
 		    			<p>Please choose one of the options below according to your needs.</p><hr />
 		    			<p><a href="https://www.ashoka.edu.in/shuttle-service/">Please click here for the shuttle schedule</a></p>
 		    		</center>
-
+                    <!-- Creates form for receiving data from the user -->
 		    		<form action="BookingDetails.jsp" method="POST" id="service">
 		    			
 		    			<div class="form-group text-center">
