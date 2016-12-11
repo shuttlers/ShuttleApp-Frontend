@@ -9,10 +9,11 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="http://i.imgur.com/RdtMmPg.png"/>
+         <!-- Script for page alerts -->
         <script type="text/javascript" src="scripts.js"></script>
         
         </head>
-
+    <!-- Stylesheet for the objects used on the page -->
 	<style type="text/css">
 
 		body{
@@ -67,7 +68,7 @@
 		}
         
         </style>
-
+   <!-- Script to control carousel slider -->
 	<script type="text/javascript">
 		
 		$(document).ready(function () {
@@ -119,7 +120,7 @@
     <div id="banner">
     	<div id="Lbanner" class="visible-lg">
     		
-
+            <!-- Create carousels -->
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -148,7 +149,7 @@
 				</div>  
 			</div>
 	    </div>
-
+        
 	    <div id="Mbanner" class="visible-md visible-sm visible-xs">
 		    <div class="container-fluid">
 		    	<div class="jumbotron text-center">

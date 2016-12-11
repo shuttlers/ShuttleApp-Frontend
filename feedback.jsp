@@ -9,12 +9,13 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="http://i.imgur.com/RdtMmPg.png"/>
-        
+        <!-- Script for page alerts -->
         
         <script type="text/javascript" src="scripts.js"></script>
         
         
 	</head>
+    <!-- Stylesheet for the objects used on the page -->
 
 	<style type="text/css">
 
@@ -79,7 +80,7 @@
        <div class="row" id="feedback-form">
 	    		<div class="col-md-6 col-md-offset-3">
 	    			<center><h3>Feedback</h3></center>
-
+                    <!-- Creates form for receiving data from the user -->
 	    			<form action="EmailFeedback.jsp" id="feedback" method="POST">
 	    				<div class="form-group">
 		    				<label>Name : </label>
