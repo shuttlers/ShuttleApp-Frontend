@@ -180,13 +180,14 @@
 
     <div id="OurServices">
 	    <div class="container-fluid">
-	    	<div class="jumbotron text-center">
+	    	
 	    		<h2>Our Services</h2>
-	    	</div>
+	    	
 
 	    	<div class="row">
 		    	<div class="col-md-6 col-md-offset-3">
 		    		<center>
+                        <h2>Our Services</h2><br></br>
 		    			<p>Available Services</p>
 		    			<p>Please choose one of the options below according to your needs.</p><hr />
 		    			<p><a href="https://www.ashoka.edu.in/shuttle-service/">Please click here for the shuttle schedule</a></p>
